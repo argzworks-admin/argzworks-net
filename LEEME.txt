@@ -1,0 +1,45 @@
+AVDESIGNLAB — WEB B2B / PROPUESTA V4
+===================================
+
+CONTENIDO
+- index.html: pagina principal.
+- style.css: identidad visual, maquetacion y version movil.
+- app.js: navegacion, animaciones y preparacion del formulario.
+- configurator.css: portada editorial, casos de uso y maquetacion del configurador.
+- configurator.js: configurador interactivo de cinco pasos y resumen descargable.
+- v4.css / v4.js: sistema visual actualizado, animaciones y fichas de producto.
+- vendor/: cinco complementos con licencia abierta integrados localmente.
+- THIRD_PARTY_NOTICES.md: versionado, uso y licencias de los complementos.
+- favicon.svg: icono de la marca.
+- images/: portada editorial y seis visuales individuales de producto.
+
+COMO VER LA WEB
+1. Extrae el ZIP completo en una carpeta.
+2. Abre index.html en un navegador moderno.
+3. Mantén los archivos y las carpetas images y vendor junto al HTML.
+
+ENFOQUE DEL NEGOCIO
+Sitio de captacion B2B para proyectos de diseno y fabricacion a medida.
+Ejemplos de aplicaciones: expositores, portacartas, accesorios de mesa,
+senalizacion y soportes QR, merchandising funcional y pequenas series.
+
+IMPORTANTE ANTES DE PUBLICAR
+- La imagen nueva de la portada y las fichas son conceptos visuales,
+  no proyectos ya ejecutados ni prueba de capacidad industrial contratada.
+- Seis conceptos individuales cuentan con ficha técnica emergente y galería
+  táctil. El material y el proceso son hipótesis sujetas a validación.
+- El formulario se encuentra bajo la portada para facilitar la captación.
+- El configurador es una demostracion local de cinco pasos: define sector,
+  objeto, materiales, personalizacion, cantidades, medidas y plazo.
+  Genera un brief que se puede copiar o descargar como archivo .txt,
+  pero NO envia emails ni almacena solicitudes en un servidor.
+- Hay que conectar un canal real de contacto y anadir datos legales,
+  politica de privacidad, aviso legal y, si procede, cookies.
+- El archivo index.html tiene temporalmente la etiqueta noindex/nofollow,
+  apropiada para esta maqueta privada. Retirala al publicar la web.
+- Sustituir cualquier afirmacion sobre capacidades, plazos o acabados
+  cuando se definan los procesos reales y los proveedores.
+
+Esta version está preparada para previsualización estática privada. Para captar
+leads reales deberá conectarse una API de formulario segura y habilitarse la
+información legal y la política de privacidad adecuada.
