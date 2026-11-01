@@ -148,8 +148,8 @@
     const company = form.elements.company.value.trim();
     const extra = form.elements.notes.value.trim();
     preparedText = [
-      "AVDESIGNLAB — BRIEF DE PROYECTO / VERSIÓN PRELIMINAR",
-      "==================================================",
+      "ARGZWORKS — BRIEF DE PROYECTO / SOLICITUD TÉCNICA",
+      "=================================================",
       "",
       "CONTACTO",
       `Nombre: ${name}`,
@@ -174,8 +174,8 @@
       "La elección de proceso, la resistencia, el plazo y los costes requieren evaluación técnica y presupuesto específicos.",
       "",
       "---",
-      "Documento generado localmente en una maqueta interactiva de AVDESIGNLAB.",
-      "NO se ha enviado ni almacenado en servidores."
+      "Documento generado en la plataforma interactiva de ARGZWORKS.",
+      "Pendiente de envío formal mediante canal de comunicación autorizado."
     ].join("\n");
     resultBrief.value = preparedText;
     result.hidden = false;
@@ -236,7 +236,7 @@
     const url = URL.createObjectURL(file);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = "AVDESIGNLAB_brief_proyecto.txt";
+    anchor.download = "ARGZWORKS_brief_proyecto.txt";
     document.body.append(anchor);
     anchor.click();
     anchor.remove();

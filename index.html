@@ -4,18 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#f7f7f4">
-  <meta name="description" content="AVDESIGNLAB: estudio independiente de diseño y fabricación de expositores, accesorios y objetos personalizados para marcas y negocios. Valencia, España.">
+  <meta name="description" content="ARGZWORKS: soluciones físicas funcionales, personalizadas y diseñadas para marcar la diferencia. Diseño y desarrollo para marcas y negocios. Valencia, España.">
   <meta name="robots" content="noindex,nofollow">
-  <title>AVDESIGNLAB — Diseño y objetos a medida para negocios</title>
+  <title>ARGZWORKS — Soluciones físicas y objetos a medida para tu negocio</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Montserrat:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./configurator.css">
   <link rel="stylesheet" href="./vendor/swiper-bundle.min.css">
   <link rel="stylesheet" href="./vendor/lenis.css">
   <link rel="stylesheet" href="./v4.css">
+  <link rel="stylesheet" href="./interactions.css">
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -25,16 +26,20 @@
   </div>
   <header class="header" id="top">
     <div class="shell header-inner">
-      <a href="#inicio" class="brand" aria-label="AVDESIGNLAB, ir al inicio">
-        <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 42 35" fill="none"><path d="M2 32L16.3 2L30.1 32H21.8L16.1 18.2L10 32H2Z" fill="currentColor"/><path d="M25 2H41L32.3 21L25 2Z" fill="currentColor"/><path d="M36.8 21L41 32H31.2L36.8 21Z" fill="currentColor"/></svg></span>
-        <span>AVDESIGN<span class="brand-light">LAB</span><span class="brand-dot">.</span></span>
+      <a href="#inicio" class="brand" aria-label="ARGZWORKS, ir al inicio">
+        <span class="brand-icon" aria-hidden="true">
+          <img src="./images/argzworks-logo-opt.png" alt="" class="brand-logo-img brand-logo-dark" width="30" height="19">
+          <img src="./images/argzworks-logo-white-opt.png" alt="" class="brand-logo-img brand-logo-light" width="30" height="19">
+        </span>
+        <span class="brand-wordmark">ARGZ<span class="brand-light">WORKS</span><span class="brand-dot">.</span></span>
       </a>
       <nav class="nav" id="main-nav" aria-label="Navegación principal">
-        <a href="#aplicaciones">Objetos</a>
+        <a href="#inicio">Inicio</a>
         <a href="#soluciones">Soluciones</a>
+        <a href="#aplicaciones">Proyectos</a>
         <a href="#proceso">Cómo trabajamos</a>
-        <a href="#estudio">Estudio</a>
-        <a href="#configurador" class="nav-cta">Cuéntanos tu idea <span aria-hidden="true">↗</span></a>
+        <a href="#contacto">Contacto</a>
+        <a href="#configurador" class="nav-cta">INICIAR PROYECTO <span aria-hidden="true">↗</span></a>
       </nav>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menú"><span></span><span></span></button>
     </div>
@@ -43,28 +48,42 @@
   <main id="contenido">
     <section class="hero hero-v3 hero-v4" id="inicio" aria-labelledby="hero-title">
       <div class="hero-v3-image">
-        <img src="./images/hero-green-v4.webp" width="1536" height="1024" alt="Colección conceptual de expositores, portacartas, bandejas y accesorios para empresas sobre fondo verde profundo" fetchpriority="high">
+        <img src="./images/hero-green-v4.webp" width="1536" height="1024" alt="Colección de soluciones físicas y objetos diseñados a medida por ARGZWORKS sobre fondo verde profundo" fetchpriority="high">
       </div>
       <div class="hero-v3-shade" aria-hidden="true"></div>
       <div class="hero-v3-content">
-        <div class="hero-v3-kicker"><span class="pulse-symbol">✳</span> AVDESIGNLAB — OBJECTS WITH PURPOSE <span class="kicker-line"></span> EST. VALENCIA</div>
-        <h1 id="hero-title"><span class="hero-line">QUE TU MARCA</span><span class="hero-line hero-line-accent">SE HAGA NOTAR<span class="hero-period">.</span></span></h1>
-        <p>Objetos útiles que no parecen hechos para cualquiera. Diseñamos y coordinamos la fabricación de expositores, accesorios y soluciones a medida para negocios con personalidad.</p>
+        <div class="hero-v3-kicker">
+          <img src="./images/argzworks-logo-white-opt.png" alt="" class="hero-kicker-logo" width="26" height="16" aria-hidden="true">
+          <span>ARGZWORKS</span>
+          <span class="hero-kicker-sep">·</span>
+          <span>SOLUCIONES FÍSICAS A MEDIDA</span>
+          <span class="kicker-line"></span>
+          <span>EST. VALENCIA</span>
+        </div>
+        <h1 id="hero-title">
+          <span class="hero-mask-wrap"><span class="hero-line hero-mask-inner">NO SOLO DISEÑAMOS OBJETOS.</span></span>
+          <span class="hero-mask-wrap"><span class="hero-line hero-line-accent hero-mask-inner">DISEÑAMOS SU PROPÓSITO<span class="hero-period">.</span></span></span>
+        </h1>
+        <p class="hero-lead">Transformamos las necesidades de tu negocio en soluciones físicas funcionales, personalizadas y diseñadas para marcar la diferencia.</p>
         <div class="hero-actions">
-          <a href="#configurador" class="button hero-main-cta">Tengo un proyecto <img src="./vendor/icons/arrow-up-right.svg" alt="" aria-hidden="true"></a>
-          <a href="#aplicaciones" class="hero-outline-cta">Explorar las soluciones <span aria-hidden="true">↓</span></a>
+          <a href="#configurador" class="button hero-main-cta">CUÉNTANOS QUÉ NECESITAS <span class="arrow-svg" aria-hidden="true">↗</span></a>
+          <a href="#soluciones" class="hero-outline-cta">EXPLORAR SOLUCIONES <span class="arrow-svg" aria-hidden="true">↓</span></a>
         </div>
       </div>
-      <div class="hero-v3-bottom"><span><span class="hero-live-dot"></span> DISEÑO / PROTOTIPADO / SERIES CORTAS</span><span>UNA IDEA · UN OBJETO · TU IDENTIDAD</span><a href="#configurador">EMPIEZA AQUÍ ↓</a></div>
-      <span class="hero-image-annotation">01 / OBJECT STUDIES · VISUALES DE CONCEPTO</span>
+      <div class="hero-v3-bottom">
+        <span><span class="hero-live-dot"></span> SOLUCIONES FÍSICAS / PROTOTIPADO / SERIES CORTAS</span>
+        <span>UNA IDEA · UN OBJETO · TU PROPÓSITO</span>
+        <a href="#configurador">INICIAR PROYECTO ↓</a>
+      </div>
+      <span class="hero-image-annotation">ARGZWORKS / ESTUDIO DE DISEÑO Y FABRICACIÓN</span>
     </section>
-    <div class="values-band"><div class="shell values-inner"><span><b>✳</b> NO CATALOGAMOS. DISEÑAMOS.</span><span><b>✳</b> PROTOTIPOS REALES</span><span><b>✳</b> SERIES CORTAS</span><span><b>✳</b> PRODUCCIÓN A TU ESCALA</span></div></div>
+    <div class="values-band"><div class="shell values-inner"><span><b>✳</b> NO CATALOGAMOS. DISEÑAMOS SU PROPÓSITO.</span><span><b>✳</b> PROTOTIPOS REALES</span><span><b>✳</b> SERIES CORTAS</span><span><b>✳</b> PRODUCCIÓN A TU ESCALA</span></div></div>
 
     <section class="config-section section-pad" id="configurador" aria-labelledby="config-title">
       <div class="shell">
         <div class="config-header reveal">
           <div><p class="eyebrow"><span class="section-num">01 /</span> TU PROYECTO EMPIEZA AQUÍ</p><h2 id="config-title">Tu idea merece<br><em>algo mejor.</em></h2></div>
-          <div class="config-header-note"><span class="config-stamp">AV / PROJECT BUILDER 01</span><p>Sin formularios interminables. En cinco pasos defines tu negocio, el objeto que imaginas y cómo necesitas fabricarlo. Al final tendrás un brief listo para compartir.</p><span>5 PASOS · 3–5 MIN · SIN COMPROMISO</span></div>
+          <div class="config-header-note"><span class="config-stamp">ARGZWORKS / BRIEF BUILDER</span><p>Sin formularios interminables. En cinco pasos defines tu negocio, el objeto que imaginas y cómo necesitas fabricarlo. Al final tendrás un brief listo para compartir.</p><span>5 PASOS · 3–5 MIN · SIN COMPROMISO</span></div>
         </div>
         <div class="config-workspace">
           <div class="config-editor">
@@ -185,10 +204,10 @@
             <div class="object-stage" id="object-stage" style="--object-accent:#d6c8ac">
               <div class="stage-orbit stage-orbit-one"></div><div class="stage-orbit stage-orbit-two"></div><div class="stage-grid"></div>
               <div class="render-object render-display" id="render-object" aria-hidden="true"><div class="object-back"></div><div class="object-shelf shelf-top"></div><div class="object-shelf shelf-bottom"></div><div class="object-base"></div><div class="object-plaque"></div></div>
-              <span class="stage-coordinate coord-tl">A/V — 01</span><span class="stage-coordinate coord-br">CONCEPT / NOT TO SCALE</span>
+              <span class="stage-coordinate coord-tl">ARGZ / 01</span><span class="stage-coordinate coord-br">CONCEPT / NOT TO SCALE</span>
             </div>
             <div class="preview-detail">
-              <div class="preview-title-row"><div><span class="preview-overline">PROYECTO EN DESARROLLO</span><h3 id="preview-name">Tu próximo objeto</h3></div><span class="preview-index">AV / 001</span></div>
+              <div class="preview-title-row"><div><span class="preview-overline">PROYECTO EN DESARROLLO</span><h3 id="preview-name">Tu próximo objeto</h3></div><span class="preview-index">ARGZ / 001</span></div>
               <p id="preview-description">Selecciona una familia de objeto para ver una representación gráfica orientativa.</p>
               <dl class="preview-specs">
                 <div><dt>SECTOR</dt><dd id="preview-sector">Sin elegir</dd></div>
@@ -201,7 +220,7 @@
           </aside>
         </div>
         <div class="config-result" id="config-result" hidden role="status" aria-live="polite">
-          <div class="result-top"><span class="result-check">✓</span><div><span>AVDESIGNLAB / PROJECT BRIEF</span><h3>Tu idea ya tiene un punto de partida.</h3><p>Hemos organizado tus respuestas en un brief. Puedes copiarlo o descargarlo para revisarlo. <strong>No se ha enviado a AVDESIGNLAB.</strong></p></div></div>
+          <div class="result-top"><span class="result-check">✓</span><div><span>ARGZWORKS / BRIEF DE PROYECTO</span><h3>Tu idea ya tiene un punto de partida.</h3><p>Hemos organizado tus respuestas en un brief. Puedes copiarlo o descargarlo para revisarlo. <strong>No se ha enviado a ARGZWORKS.</strong></p></div></div>
           <label for="result-brief">Resumen de tu proyecto</label><textarea id="result-brief" rows="13" readonly></textarea>
           <div class="result-actions"><button type="button" id="config-copy" class="config-next">Copiar brief <span>↗</span></button><button type="button" id="config-download" class="result-secondary">Descargar .txt ↓</button><button type="button" id="config-edit" class="result-link">Editar configuración ↗</button></div>
         </div>
@@ -220,27 +239,152 @@
       </div>
     </section>
 
-    <section class="solutions section-pad" id="soluciones" aria-labelledby="solutions-title">
-      <div class="shell">
-        <div class="section-head reveal">
-          <div><p class="eyebrow"><span class="section-num">03 /</span> SOLUCIONES CON CRITERIO</p><h2 id="solutions-title">No solo se ve mejor.<br><em>Funciona mejor.</em></h2></div>
-          <p class="head-desc">Cada objeto nace de una necesidad: vender mejor, comunicar con claridad o simplificar el trabajo diario. Estas son propuestas de diseño, no proyectos ya fabricados.</p>
+    <section class="solutions solutions-horizontal-section" id="soluciones" aria-labelledby="solutions-title">
+      <div class="solutions-pin-wrap" id="solutions-pin-wrap">
+        <div class="solutions-sticky" id="solutions-sticky">
+          
+          <div class="solutions-sticky-header">
+            <div>
+              <p class="eyebrow"><span class="section-num">03 /</span> SOLUCIONES Y CATEGORÍAS</p>
+              <h2 id="solutions-title">No solo se ve mejor.<br><em>Funciona mejor.</em></h2>
+            </div>
+            <div class="solutions-scroll-indicator" aria-hidden="true">
+              <span>EXPLORA LATERALMENTE</span>
+              <div class="solutions-progress-bar"><div class="solutions-progress-fill" id="solutions-progress-fill"></div></div>
+              <span id="solutions-counter">01 / 06</span>
+            </div>
+          </div>
+
+          <!-- Desktop Track & Mobile Embla Viewport -->
+          <div class="solutions-track-viewport embla-solutions-viewport" id="embla-solutions">
+            <div class="solutions-track embla-solutions-container" id="solutions-track">
+              
+              <article class="solution-h-card">
+                <div class="solution-h-media">
+                  <img src="./images/object-display-v4.webp" loading="lazy" width="1536" height="1024" alt="Expositores comerciales para tiendas y retail">
+                  <span class="solution-h-badge">FIG. 01 / EXPOSITORES</span>
+                  <span class="solution-h-icon" aria-hidden="true">↗</span>
+                </div>
+                <div class="solution-h-body">
+                  <span class="solution-h-service">ARGZ / 01 — EXPOSITORES COMERCIALES</span>
+                  <h3>Que te miren primero.</h3>
+                  <p>Expositores escalonados y de sobremesa que convierten un mostrador saturado en una presentación limpia y atractiva.</p>
+                  <div class="solution-h-meta">
+                    <div><b>QUÉ RESUELVE</b><span>Visibilidad y jerarquía de producto sin restar espacio útil</span></div>
+                    <div><b>FABRICACIÓN</b><span>Acrílico, madera curvada, chapa plegada o impresión 3D</span></div>
+                  </div>
+                  <button type="button" data-config-type="display" data-config-sector="retail" class="solution-h-action">Configurar expositor <span aria-hidden="true">↗</span></button>
+                </div>
+              </article>
+
+              <article class="solution-h-card">
+                <div class="solution-h-media">
+                  <img src="./images/object-menu-v4.webp" loading="lazy" width="1536" height="1024" alt="Accesorios de hostelería y portacartas estables">
+                  <span class="solution-h-badge">FIG. 02 / HOSTELERÍA</span>
+                  <span class="solution-h-icon" aria-hidden="true">↗</span>
+                </div>
+                <div class="solution-h-body">
+                  <span class="solution-h-service">ARGZ / 02 — ACCESORIOS DE HOSTELERÍA</span>
+                  <h3>Menos lío. Más experiencia.</h3>
+                  <p>Portamenús, servilleteros y soportes de mesa fáciles de limpiar, con gráfica intercambiable y base con aplomo diario.</p>
+                  <div class="solution-h-meta">
+                    <div><b>QUÉ RESUELVE</b><span>Cambios de carta rápidos, resistencia al uso y orden en mesa</span></div>
+                    <div><b>FABRICACIÓN</b><span>Aluminio lacado, acero inoxidable, metacrilato o madera tratada</span></div>
+                  </div>
+                  <button type="button" data-config-type="menu" data-config-sector="hosteleria" class="solution-h-action">Configurar accesorios <span aria-hidden="true">↗</span></button>
+                </div>
+              </article>
+
+              <article class="solution-h-card">
+                <div class="solution-h-media">
+                  <img src="./images/object-sign-v4.webp" loading="lazy" width="1536" height="1024" alt="Señalética integrada y soportes QR para mesas y espacios">
+                  <span class="solution-h-badge">FIG. 03 / SEÑALÉTICA</span>
+                  <span class="solution-h-icon" aria-hidden="true">↗</span>
+                </div>
+                <div class="solution-h-body">
+                  <span class="solution-h-service">ARGZ / 03 — SEÑALÉTICA Y SOPORTES QR</span>
+                  <h3>Señales con carácter.</h3>
+                  <p>Identificación de mesas, reservados y accesos digitales QR que se integran como piezas cuidadas en la arquitectura del local.</p>
+                  <div class="solution-h-meta">
+                    <div><b>QUÉ RESUELVE</b><span>Elimina pegatinas o soportes genéricos que degradan la imagen</span></div>
+                    <div><b>FABRICACIÓN</b><span>Chapa grabada, bicapa, polímeros o mecanizado de precisión</span></div>
+                  </div>
+                  <button type="button" data-config-type="sign" data-config-sector="hosteleria" class="solution-h-action">Configurar señalética <span aria-hidden="true">↗</span></button>
+                </div>
+              </article>
+
+              <article class="solution-h-card">
+                <div class="solution-h-media">
+                  <img src="./images/object-tray-v4.webp" loading="lazy" width="1536" height="1024" alt="Organizadores y bandejas de trabajo funcionales">
+                  <span class="solution-h-badge">FIG. 04 / ORGANIZADORES</span>
+                  <span class="solution-h-icon" aria-hidden="true">↗</span>
+                </div>
+                <div class="solution-h-body">
+                  <span class="solution-h-service">ARGZ / 04 — ORGANIZADORES Y OBJETOS FUNCIONALES</span>
+                  <h3>Orden pensado para trabajar.</h3>
+                  <p>Bandejas, separadores modulares y cajas funcionales diseñadas con las medidas exactas de tus herramientas y espacio de trabajo.</p>
+                  <div class="solution-h-meta">
+                    <div><b>QUÉ RESUELVE</b><span>Agiliza los ritmos de trabajo y evita el desorden en barra o mesa</span></div>
+                    <div><b>FABRICACIÓN</b><span>PETG técnico de alta tenacidad, polímeros y corte láser</span></div>
+                  </div>
+                  <button type="button" data-config-type="tray" data-config-sector="otro" class="solution-h-action">Configurar organizador <span aria-hidden="true">↗</span></button>
+                </div>
+              </article>
+
+              <article class="solution-h-card">
+                <div class="solution-h-media">
+                  <img src="./images/object-brand-v4.webp" loading="lazy" width="1536" height="1024" alt="Objetos corporativos personalizados con utilidad real">
+                  <span class="solution-h-badge">FIG. 05 / CORPORATIVO</span>
+                  <span class="solution-h-icon" aria-hidden="true">↗</span>
+                </div>
+                <div class="solution-h-body">
+                  <span class="solution-h-service">ARGZ / 05 — OBJETOS CORPORATIVOS PERSONALIZADOS</span>
+                  <h3>Una marca para usar.</h3>
+                  <p>Piezas cotidianas que tus clientes y equipo conservan y agradecen porque solucionan una necesidad tangible en su día a día.</p>
+                  <div class="solution-h-meta">
+                    <div><b>QUÉ RESUELVE</b><span>Supera el merchandising genérico ofreciendo valor físico real</span></div>
+                    <div><b>FABRICACIÓN</b><span>Procesos mixtos, grabado láser y termoformado a escala</span></div>
+                  </div>
+                  <button type="button" data-config-type="brand" data-config-sector="marca" class="solution-h-action">Configurar objeto corporativo <span aria-hidden="true">↗</span></button>
+                </div>
+              </article>
+
+              <article class="solution-h-card">
+                <div class="solution-h-media">
+                  <img src="./images/object-custom-v4.webp" loading="lazy" width="1536" height="1024" alt="Proyectos especiales y prototipado a medida">
+                  <span class="solution-h-badge">FIG. 06 / ESPECIAL</span>
+                  <span class="solution-h-icon" aria-hidden="true">↗</span>
+                </div>
+                <div class="solution-h-body">
+                  <span class="solution-h-service">ARGZ / 06 — PROYECTOS ESPECIALES</span>
+                  <h3>Un problema. Tu solución.</h3>
+                  <p>Piezas con geometrías y requisitos únicos que no existen en el mercado comercial. Diseñamos la función y la fabricamos.</p>
+                  <div class="solution-h-meta">
+                    <div><b>QUÉ RESUELVE</b><span>Requerimientos físicos a medida sin soluciones en catálogo estándar</span></div>
+                    <div><b>FABRICACIÓN</b><span>Prototipado rápido iterativo, mecanizado y ensamblaje</span></div>
+                  </div>
+                  <button type="button" data-config-type="custom" data-config-sector="otro" class="solution-h-action">Contar mi necesidad <span aria-hidden="true">↗</span></button>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Controles táctiles móviles -->
+          <div class="mobile-embla-controls" aria-label="Navegación de soluciones">
+            <div class="mobile-embla-dots" id="embla-dots" role="tablist" aria-label="Paginación de soluciones"></div>
+            <div class="mobile-embla-arrows">
+              <button type="button" class="mobile-embla-arrow" id="embla-prev" aria-label="Solución anterior"><img src="./vendor/icons/arrow-left.svg" alt="" width="16" height="16"></button>
+              <button type="button" class="mobile-embla-arrow" id="embla-next" aria-label="Siguiente solución"><img src="./vendor/icons/arrow-right.svg" alt="" width="16" height="16"></button>
+            </div>
+          </div>
+
+          <div class="solution-sticky-foot">
+            <span>ARGZWORKS / RECORRIDO LATERAL DE CATEGORÍAS</span>
+            <span>PROPUESTAS DE CONCEPTO · VALIDACIÓN INDIVIDUAL</span>
+          </div>
+
         </div>
-        <div class="solutions-grid">
-          <article class="solution-card reveal">
-            <div class="solution-media"><img src="./images/object-display-v4.webp" loading="lazy" width="1536" height="1024" alt="Expositor modular verde salvia con niveles que elevan y ordenan productos cosméticos"><span class="image-serial">FIG. 01 / ESTUDIO CONCEPTUAL</span><span class="corner-icon" aria-hidden="true">↗</span></div>
-            <div class="solution-copy"><span class="service-code">AV / 01 — RETAIL SYSTEMS</span><h3>Que te miren primero.</h3><p>Expositores escalonados que convierten un mostrador saturado en una presentación clara. Alturas estudiadas, producto accesible y módulos reemplazables.</p><div class="case-meta"><div><b>QUÉ RESUELVE</b><span>Más visibilidad sin ocupar más espacio</span></div><div><b>FABRICACIÓN A ESTUDIAR</b><span>Acrílico cortado + base 3D; metal plegado para series</span></div></div><button type="button" data-config-type="display" data-config-sector="retail" class="inline-action">Quiero algo así <span aria-hidden="true">↗</span></button></div>
-          </article>
-          <article class="solution-card reveal">
-            <div class="solution-media"><img src="./images/object-menu-v4.webp" loading="lazy" width="1536" height="1024" alt="Portacarta contemporáneo con base verde y tarjeta intercambiable para restaurante"><span class="image-serial">FIG. 02 / ESTUDIO CONCEPTUAL</span><span class="corner-icon" aria-hidden="true">↗</span></div>
-            <div class="solution-copy"><span class="service-code">AV / 02 — HOSPITALITY SYSTEMS</span><h3>Menos lío. Más experiencia.</h3><p>Portacartas y soportes de mesa fáciles de limpiar, con gráfica intercambiable y una base estable que aguante el uso cotidiano.</p><div class="case-meta"><div><b>QUÉ RESUELVE</b><span>Actualización de carta, orden y mantenimiento</span></div><div><b>FABRICACIÓN A ESTUDIAR</b><span>Chapa plegada, metacrilato y bases lastradas</span></div></div><button type="button" data-config-type="menu" data-config-sector="hosteleria" class="inline-action">Quiero algo así <span aria-hidden="true">↗</span></button></div>
-          </article>
-          <article class="solution-card reveal">
-            <div class="solution-media"><img src="./images/object-custom-v4.webp" loading="lazy" width="1536" height="1024" alt="Organizador modular de sobremesa realizado como estudio de objeto personalizado"><span class="image-serial">FIG. 03 / ESTUDIO CONCEPTUAL</span><span class="corner-icon" aria-hidden="true">↗</span></div>
-            <div class="solution-copy"><span class="service-code">AV / 03 — CUSTOM OBJECTS</span><h3>Un problema. Tu solución.</h3><p>Soportes, organizadores y piezas específicas que no encuentras en un catálogo. Diseñamos la función primero; la estética llega con tu marca.</p><div class="case-meta"><div><b>QUÉ RESUELVE</b><span>Necesidades concretas sin comprar genéricos</span></div><div><b>FABRICACIÓN A ESTUDIAR</b><span>Prototipo 3D y proceso ajustado al volumen</span></div></div><button type="button" data-config-type="custom" data-config-sector="marca" class="inline-action">Contar mi problema <span aria-hidden="true">↗</span></button></div>
-          </article>
-        </div>
-        <p class="concept-note">* Visuales conceptuales ilustrativos. No representan trabajos realizados, especificaciones técnicas definitivas ni productos disponibles en stock.</p>
       </div>
     </section>
 
@@ -253,12 +397,12 @@
         <div class="product-gallery-header"><span><img src="./vendor/icons/layers.svg" alt="" aria-hidden="true"> COLECCIÓN / 001—006</span><div class="product-gallery-controls"><button type="button" class="gallery-prev" aria-label="Ver productos anteriores"><img src="./vendor/icons/arrow-left.svg" alt=""></button><button type="button" class="gallery-next" aria-label="Ver más productos"><img src="./vendor/icons/arrow-right.svg" alt=""></button></div></div>
         <div class="swiper product-swiper" aria-label="Galería de seis familias de objetos y accesorios">
           <div class="swiper-wrapper">
-            <article class="swiper-slide object-card" data-object="display"><div class="object-card-image"><img src="./images/object-display-v4.webp" alt="Expositor modular de varios niveles en verde salvia con cosmética" loading="lazy" width="1536" height="1024"><span>01 / RETAIL</span></div><div class="object-card-body"><h3>Expositores que venden.</h3><p>Más visibilidad, menos espacio perdido en mostrador.</p><div class="object-card-tags"><span>MODULAR</span><span>ACRÍLICO / CHAPA</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="display">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="display" data-config-sector="retail" aria-label="Configurar un expositor"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
-            <article class="swiper-slide object-card" data-object="menu"><div class="object-card-image"><img src="./images/object-menu-v4.webp" alt="Portacartas de sobremesa con base verde y menú reemplazable" loading="lazy" width="1536" height="1024"><span>02 / HOSPITALITY</span></div><div class="object-card-body"><h3>Cartas sin complicaciones.</h3><p>Que cambiar un menú no implique cambiar el soporte.</p><div class="object-card-tags"><span>INTERCAMBIABLE</span><span>METAL / ACRÍLICO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="menu">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="menu" data-config-sector="hosteleria" aria-label="Configurar un portacartas"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
-            <article class="swiper-slide object-card" data-object="sign"><div class="object-card-image"><img src="./images/object-sign-v4.webp" alt="Señalética de mesa de diseño discreto con soportes informativos" loading="lazy" width="1536" height="1024"><span>03 / SPACE</span></div><div class="object-card-body"><h3>Señales con carácter.</h3><p>Una indicación útil también puede formar parte del espacio.</p><div class="object-card-tags"><span>REEMPLAZABLE</span><span>CHAPA / VINILO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="sign">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="sign" data-config-sector="hosteleria" aria-label="Configurar señalética"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
-            <article class="swiper-slide object-card" data-object="tray"><div class="object-card-image"><img src="./images/object-tray-v4.webp" alt="Bandeja organizadora modular de líneas suaves con acabado verde apagado" loading="lazy" width="1536" height="1024"><span>04 / OPERATIONS</span></div><div class="object-card-body"><h3>Orden, sin esfuerzo.</h3><p>Bandejas y organizadores para procesos de trabajo reales.</p><div class="object-card-tags"><span>ADAPTABLE</span><span>PETG / MADERA</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="tray">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="tray" data-config-sector="otro" aria-label="Configurar un organizador"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
-            <article class="swiper-slide object-card" data-object="brand"><div class="object-card-image"><img src="./images/object-brand-v4.webp" alt="Accesorios corporativos con utilidad diaria y estética verde y marfil" loading="lazy" width="1536" height="1024"><span>05 / BRAND</span></div><div class="object-card-body"><h3>Una marca para usar.</h3><p>Objetos de empresa que aportan algo más que un logotipo.</p><div class="object-card-tags"><span>PERSONALIZABLE</span><span>PROCESO MIXTO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="brand">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="brand" data-config-sector="marca" aria-label="Configurar objeto de marca"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
-            <article class="swiper-slide object-card" data-object="custom"><div class="object-card-image"><img src="./images/object-custom-v4.webp" alt="Sistema de organizadores de escritorio personalizados de diseño modular" loading="lazy" width="1536" height="1024"><span>06 / BESPOKE</span></div><div class="object-card-body"><h3>Lo que aún no existe.</h3><p>Cuéntanos el problema y diseñamos una pieza específica.</p><div class="object-card-tags"><span>A TU MEDIDA</span><span>PROTOTIPADO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="custom">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="custom" data-config-sector="otro" aria-label="Configurar un objeto único"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
+            <article class="swiper-slide object-card" data-object="display"><div class="object-card-image"><img src="./images/object-display-v4.webp" alt="Expositor modular de varios niveles en verde salvia con cosmética" loading="lazy" width="1536" height="1024"><span>01 / RETAIL</span></div><div class="object-card-body"><h3>Expositores comerciales</h3><p>Más visibilidad, orden y presencia para tus productos sin saturar el mostrador.</p><div class="object-card-tags"><span>MODULAR</span><span>ACRÍLICO / CHAPA</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="display">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="display" data-config-sector="retail" aria-label="Configurar un expositor"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
+            <article class="swiper-slide object-card" data-object="menu"><div class="object-card-image"><img src="./images/object-menu-v4.webp" alt="Portacartas de sobremesa con base verde y menú reemplazable" loading="lazy" width="1536" height="1024"><span>02 / HOSPITALITY</span></div><div class="object-card-body"><h3>Accesorios de hostelería</h3><p>Portamenús y soportes estables diseñados para resistir el ritmo diario.</p><div class="object-card-tags"><span>INTERCAMBIABLE</span><span>METAL / ACRÍLICO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="menu">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="menu" data-config-sector="hosteleria" aria-label="Configurar un portacartas"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
+            <article class="swiper-slide object-card" data-object="sign"><div class="object-card-image"><img src="./images/object-sign-v4.webp" alt="Señalética de mesa de diseño discreto con soportes informativos" loading="lazy" width="1536" height="1024"><span>03 / SPACE</span></div><div class="object-card-body"><h3>Señalética y soportes QR</h3><p>Identificación cuidada que se integra con naturalidad en la arquitectura de tu espacio.</p><div class="object-card-tags"><span>REEMPLAZABLE</span><span>CHAPA / POLÍMEROS</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="sign">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="sign" data-config-sector="hosteleria" aria-label="Configurar señalética"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
+            <article class="swiper-slide object-card" data-object="tray"><div class="object-card-image"><img src="./images/object-tray-v4.webp" alt="Bandeja organizadora modular de líneas suaves con acabado verde apagado" loading="lazy" width="1536" height="1024"><span>04 / OPERATIONS</span></div><div class="object-card-body"><h3>Organizadores y objetos funcionales</h3><p>Bandejas y módulos a medida para optimizar el trabajo y mantener el orden.</p><div class="object-card-tags"><span>ADAPTABLE</span><span>PETG / CORTE LÁSER</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="tray">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="tray" data-config-sector="otro" aria-label="Configurar un organizador"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
+            <article class="swiper-slide object-card" data-object="brand"><div class="object-card-image"><img src="./images/object-brand-v4.webp" alt="Accesorios corporativos con utilidad diaria y estética verde y marfil" loading="lazy" width="1536" height="1024"><span>05 / BRAND</span></div><div class="object-card-body"><h3>Objetos corporativos personalizados</h3><p>Piezas útiles para fidelización y equipos que ofrecen un valor tangible real.</p><div class="object-card-tags"><span>PERSONALIZABLE</span><span>PROCESO MIXTO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="brand">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="brand" data-config-sector="marca" aria-label="Configurar objeto de marca"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
+            <article class="swiper-slide object-card" data-object="custom"><div class="object-card-image"><img src="./images/object-custom-v4.webp" alt="Sistema de organizadores de escritorio personalizados de diseño modular" loading="lazy" width="1536" height="1024"><span>06 / BESPOKE</span></div><div class="object-card-body"><h3>Proyectos especiales</h3><p>Soluciones singulares desarrolladas desde cero para necesidades físicas específicas.</p><div class="object-card-tags"><span>A TU MEDIDA</span><span>PROTOTIPADO RÁPIDO</span></div><div class="object-card-actions"><button type="button" class="product-detail-link" data-product-detail="custom">Explorar propuesta <span>↗</span></button><button type="button" class="product-build-link" data-config-type="custom" data-config-sector="otro" aria-label="Configurar un objeto único"><img src="./vendor/icons/arrow-up-right.svg" alt=""></button></div></div></article>
           </div>
           <div class="swiper-pagination product-gallery-pagination" aria-label="Posición de la galería"></div>
         </div>
@@ -310,18 +454,153 @@
       </div>
     </div></section>
 
+    <section class="b2b-contact section-pad" id="contacto" aria-labelledby="contact-title">
+      <div class="shell b2b-contact-layout">
+        <div class="b2b-contact-info reveal">
+          <p class="eyebrow"><span class="section-num">08 /</span> CONTACTO B2B</p>
+          <h2 id="contact-title">Cuéntanos tu proyecto.<br><em>Hablemos de soluciones.</em></h2>
+          <p class="b2b-contact-lead">Estudiamos proyectos personalizados para hostelería, comercios, oficinas y marcas. Dinos qué necesitas resolver y prepararemos una propuesta viable adaptada a tus requerimientos.</p>
+          
+          <div class="b2b-contact-bullets">
+            <div class="b2b-contact-bullet">
+              <span class="icon">✓</span>
+              <p><strong>Atención técnica directa:</strong> Sin intermediarios comerciales, evaluamos la función y el material desde el primer contacto.</p>
+            </div>
+            <div class="b2b-contact-bullet">
+              <span class="icon">✓</span>
+              <p><strong>Series cortas y prototipado:</strong> Viabilidad técnica analizada según volumen, desde una pieza hasta lotes seriados.</p>
+            </div>
+            <div class="b2b-contact-bullet">
+              <span class="icon">✓</span>
+              <p><strong>Propuesta individualizada:</strong> Cada solicitud se cotiza de forma específica sin presupuestos automáticos erróneos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="b2b-form-card reveal">
+          <form id="b2b-contact-form" novalidate data-endpoint="">
+            <div class="b2b-form-grid">
+              <div class="b2b-form-field">
+                <label for="b2b-name">Nombre y apellidos <span class="req">* OBLIGATORIO</span></label>
+                <input type="text" id="b2b-name" class="b2b-input" required autocomplete="name" placeholder="Tu nombre y apellidos">
+                <span class="b2b-field-error" id="b2b-name-error"></span>
+              </div>
+
+              <div class="b2b-form-field">
+                <label for="b2b-company">Empresa o marca <span class="req">* OBLIGATORIO</span></label>
+                <input type="text" id="b2b-company" class="b2b-input" required autocomplete="organization" placeholder="Nombre de tu negocio">
+                <span class="b2b-field-error" id="b2b-company-error"></span>
+              </div>
+
+              <div class="b2b-form-field">
+                <label for="b2b-email">Correo profesional <span class="req">* OBLIGATORIO</span></label>
+                <input type="email" id="b2b-email" class="b2b-input" required autocomplete="email" placeholder="hola@tuempresa.com">
+                <span class="b2b-field-error" id="b2b-email-error"></span>
+              </div>
+
+              <div class="b2b-form-field">
+                <label for="b2b-phone">Teléfono <span class="req">OPCIONAL</span></label>
+                <input type="tel" id="b2b-phone" class="b2b-input" autocomplete="tel" placeholder="+34 600 000 000">
+                <span class="b2b-field-error" id="b2b-phone-error"></span>
+              </div>
+
+              <div class="b2b-form-field full">
+                <label>Tipo de proyecto o solución</label>
+                <div class="b2b-chips" role="group" aria-label="Selecciona tipo de proyecto">
+                  <button type="button" class="b2b-chip-btn b2b-chip-project is-active" data-value="Expositor / Display" aria-pressed="true">Expositor / Display</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-project" data-value="Portacartas / Menú" aria-pressed="false">Portacartas / Menú</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-project" data-value="Señalética / Soporte QR" aria-pressed="false">Señalética / QR</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-project" data-value="Objeto corporativo" aria-pressed="false">Objeto corporativo</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-project" data-value="Proyecto a medida" aria-pressed="false">Proyecto a medida</button>
+                </div>
+                <input type="hidden" id="b2b-project-type" value="Expositor / Display">
+              </div>
+
+              <div class="b2b-form-field full">
+                <label for="b2b-message">Descripción de la necesidad <span class="req">* OBLIGATORIO</span></label>
+                <textarea id="b2b-message" class="b2b-textarea" rows="4" required placeholder="Cuéntanos el problema que necesitas resolver, dimensiones orientativas, uso previsto o cualquier detalle relevante..."></textarea>
+                <span class="b2b-field-error" id="b2b-message-error"></span>
+              </div>
+
+              <div class="b2b-form-field full">
+                <label>Plazo aproximado objetivo</label>
+                <div class="b2b-chips" role="group" aria-label="Selecciona plazo objetivo">
+                  <button type="button" class="b2b-chip-btn b2b-chip-timeline is-active" data-value="Sin fecha definida" aria-pressed="true">Sin urgencia</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-timeline" data-value="Menos de 1 mes" aria-pressed="false">Menos de 1 mes</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-timeline" data-value="1 a 3 meses" aria-pressed="false">1–3 meses</button>
+                  <button type="button" class="b2b-chip-btn b2b-chip-timeline" data-value="Más de 3 meses" aria-pressed="false">Más de 3 meses</button>
+                </div>
+                <input type="hidden" id="b2b-timeline" value="Sin fecha definida">
+              </div>
+
+              <div class="b2b-privacy-wrap">
+                <input type="checkbox" id="b2b-privacy" required>
+                <label for="b2b-privacy">He leído y acepto la <a href="#estudio">información de privacidad y tratamiento de datos</a> para la recepción de esta solicitud comercial B2B.</label>
+              </div>
+
+              <button type="submit" id="b2b-submit-btn" class="b2b-submit-btn">
+                <span>Enviar solicitud de proyecto</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+
+            <div id="b2b-status-banner" class="b2b-status-banner" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <section class="circular-return-bar" aria-label="Retorno circular al inicio">
+    <div class="shell circular-return-inner">
+      <div class="circular-return-meta">
+        <span>EXPERIENCIA CIRCULAR · ARGZWORKS</span>
+        <strong>Has completado el recorrido.</strong>
+      </div>
+      <div class="circular-return-controller">
+        <button type="button" class="circular-return-button" id="circular-return-btn" aria-label="Regresar al inicio de la página">
+          <svg class="ring" viewBox="0 0 74 74" aria-hidden="true">
+            <circle class="track" cx="37" cy="37" r="34" fill="none" stroke-width="3" />
+            <circle class="fill" id="circular-ring-fill" cx="37" cy="37" r="34" fill="none" stroke-width="3" />
+          </svg>
+          <span class="circular-return-arrow" aria-hidden="true">↑</span>
+        </button>
+        <div class="circular-return-label">
+          <small style="font: 9px var(--font-brand); color: #8e9e8f; display: block; letter-spacing: 0.05em;">NAVEGACIÓN</small>
+          <span style="font-size: 13px; font-weight: 750; color: #fdfefb;">Volver al inicio ↺</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="overscroll-cue" class="overscroll-cue" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span>Retornando al inicio de ARGZWORKS...</span>
+  </div>
+
   <footer class="footer"><div class="shell"><div class="footer-top">
-    <div><a href="#inicio" class="brand footer-brand"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 42 35" fill="none"><path d="M2 32L16.3 2L30.1 32H21.8L16.1 18.2L10 32H2Z" fill="currentColor"/><path d="M25 2H41L32.3 21L25 2Z" fill="currentColor"/><path d="M36.8 21L41 32H31.2L36.8 21Z" fill="currentColor"/></svg></span>AVDESIGN<span class="brand-light">LAB</span><span class="brand-dot">.</span></a><p>Objetos que tienen sentido.<br>Diseño a medida para marcas y negocios.</p></div>
+    <div>
+      <a href="#inicio" class="brand footer-brand" aria-label="ARGZWORKS, ir al inicio">
+        <span class="brand-icon" aria-hidden="true">
+          <img src="./images/argzworks-logo-white-opt.png" alt="" class="brand-logo-img" width="40" height="25">
+        </span>
+        <span class="brand-wordmark">ARGZ<span class="brand-light">WORKS</span><span class="brand-dot">.</span></span>
+      </a>
+      <p>Soluciones físicas con propósito.<br>Diseño y desarrollo a medida para marcas y negocios.</p>
+    </div>
     <a href="#top" class="footer-up">VOLVER ARRIBA <span aria-hidden="true">↗</span></a>
-  </div><div class="footer-rule"></div><div class="footer-bottom"><span>© 2026 AVDESIGNLAB / CONCEPTO DE WEB B2B</span><span>VALENCIA — ESPAÑA</span><span>PRIVACIDAD: Esta maqueta no recoge datos. Se completarán la identificación legal, política de privacidad y contacto antes de su apertura pública.</span></div></div></footer>
+  </div><div class="footer-rule"></div><div class="footer-bottom"><span>© 2026 ARGZWORKS / B2B PLATFORM</span><span>VALENCIA — ESPAÑA</span><span>Soluciones físicas funcionales, personalizadas y diseñadas para marcar la diferencia.</span></div></div></footer>
   <a href="#configurador" class="mobile-sticky-cta">Configurar un proyecto <span aria-hidden="true">↗</span></a>
-  <script src="./configurator.js" defer></script>
-  <script src="./app.js"></script>
-  <script src="./vendor/anime.umd.min.js" defer></script>
+  <script src="./vendor/gsap.min.js" defer></script>
+  <script src="./vendor/ScrollTrigger.min.js" defer></script>
   <script src="./vendor/lenis.min.js" defer></script>
   <script src="./vendor/swiper-bundle.min.js" defer></script>
   <script src="./vendor/micromodal.min.js" defer></script>
+  <script src="./vendor/embla-carousel.umd.js" defer></script>
+  <script src="./configurator.js" defer></script>
+  <script src="./app.js" defer></script>
   <script src="./v4.js" defer></script>
+  <script src="./interactions.js" defer></script>
 </body>
 </html>

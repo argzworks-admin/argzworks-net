@@ -1,60 +1,66 @@
-/* AVDESIGNLAB / v04 — progressive enhancements; core configurator works without dependencies. */
+/* ARGZWORKS — Progressive Enhancements & Product Knowledge Base */
 (() => {
   "use strict";
   const prefersLessMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const items = {
     display: {
-      category: "AV / 01 — RETAIL SYSTEMS", title: "Expositores que venden.",
+      category: "ARGZ / 01 — RETAIL",
+      title: "Expositores comerciales",
       image: "./images/object-display-v4.webp",
-      intro: "Un sistema de alturas y apoyos para que el producto destaque sin ocupar todo el mostrador.",
-      benefit: "Mejora la visibilidad, organiza las referencias y facilita el cambio de colección o producto.",
-      manufacturing: "Prototipo mediante impresión 3D y pruebas de estabilidad. Para series, estudiar acrílico cortado y chapa plegada con uniones desmontables.",
-      options: "Dimensiones, número de niveles, soportes reemplazables, color corporativo y logotipo.",
+      intro: "Sistemas modulares que elevan y organizan tus productos en mostradores, vitrinas y puntos de venta.",
+      benefit: "Multiplica la visibilidad sin saturar la superficie disponible. Facilita la reposición y mantiene el producto siempre destacado.",
+      manufacturing: "Prototipo de encaje en impresión 3D de alta definición. Para series: acrílico cortado con láser, chapa plegada y lacado al horno.",
+      options: "Medidas exactas de tu mostrador, número de niveles, módulos intercambiables, color corporativo y logotipo grabado.",
       type: "display", sector: "retail"
     },
     menu: {
-      category: "AV / 02 — HOSPITALITY SYSTEMS", title: "Cartas sin complicaciones.",
+      category: "ARGZ / 02 — HOSTELERÍA",
+      title: "Accesorios de hostelería",
       image: "./images/object-menu-v4.webp",
-      intro: "Un portacarta que aporta identidad, se mantiene de pie y permite actualizar información sin rehacerlo.",
-      benefit: "Reduce impresiones y recambios, mantiene la presentación uniforme y simplifica la limpieza de la mesa.",
-      manufacturing: "Chapa plegada o base lastrada con ranura de metacrilato. Validar estabilidad, resistencia al agua y bordes fáciles de limpiar.",
-      options: "Formatos A5/A6 u otros, doble cara, acabados, colores, grabado y sistema para sustituir las cartas.",
+      intro: "Portacartas y soportes de mesa diseñados para soportar el uso diario intenso con presencia impecable.",
+      benefit: "Bases firmes que no se caen, materiales lavables resistentes a líquidos y un sistema ágil para actualizar la carta sin cambiar el soporte.",
+      manufacturing: "Bases lastradas con chapa de acero tratada o madera mecanizada, ranura para panel de metacrilato y esquinas pulidas para limpieza fácil.",
+      options: "Formatos A5/A6 u otros, grabado de marca, acabado a una o dos caras y fijaciones invisibles.",
       type: "menu", sector: "hosteleria"
     },
     sign: {
-      category: "AV / 03 — SPACE SYSTEMS", title: "Señales con carácter.",
+      category: "ARGZ / 03 — ESPACIOS",
+      title: "Señalética y soportes QR",
       image: "./images/object-sign-v4.webp",
-      intro: "Señalética para un restaurante, tienda u hotel que informa y también forma parte del interiorismo.",
-      benefit: "Mayor legibilidad y coherencia; soportes que pueden reutilizarse cuando cambie un mensaje o un QR.",
-      manufacturing: "Placa intercambiable en metacrilato o chapa; fijaciones simples. Comprobar contraste, estabilidad y, si procede, acceso al QR real.",
-      options: "Tipografía, pictogramas, base, anclaje, tamaños, gráfica reemplazable y acabados.",
+      intro: "Elementos de señalización e información digital que se integran con naturalidad en el interiorismo de tu espacio.",
+      benefit: "Sustituye cartelería efímera por soportes sólidos y cuidados que comunican con claridad y refuerzan la identidad de tu negocio.",
+      manufacturing: "Placas intercambiables en chapa metálica o metacrilato satinado antirreflejo. Códigos QR grabados por láser o protegidos.",
+      options: "Tipografía corporativa, pictogramas, peanas de sobremesa o anclaje mural, acabados mates o cepillados.",
       type: "sign", sector: "hosteleria"
     },
     tray: {
-      category: "AV / 04 — OPERATIONS", title: "Orden, sin esfuerzo.",
+      category: "ARGZ / 04 — FUNCIONAL",
+      title: "Organizadores y objetos funcionales",
       image: "./images/object-tray-v4.webp",
-      intro: "Bandejas y organizadores diseñados para una tarea concreta: cobrar, servir, preparar pedidos o guardar accesorios.",
-      benefit: "Evita piezas sueltas, reduce tiempo de búsqueda y ordena el puesto de trabajo.",
-      manufacturing: "Prototipo FDM en PETG para test de encaje; madera mecanizada o moldes/procesos externos si el volumen lo justifica.",
-      options: "Compartimentos, inserciones, apilado, medidas, material y color.",
+      intro: "Bandejas y organizadores creados a la medida de los flujos de trabajo de tu equipo.",
+      benefit: "Pone fin al desorden en cajas y mostradores. Reduce tiempos muertos y mejora la experiencia operativa de cara al cliente.",
+      manufacturing: "Modelado paramétrico y prototipado FDM en PETG de alta tenacidad; piezas finales en madera noble mecanizada o moldeado según volumen.",
+      options: "Compartimentación según objetos a ordenar, encajes apilables, almohadillado interior y grabado de identificación.",
       type: "tray", sector: "otro"
     },
     brand: {
-      category: "AV / 05 — BRAND OBJECTS", title: "Una marca para usar.",
+      category: "ARGZ / 05 — BRANDING",
+      title: "Objetos corporativos personalizados",
       image: "./images/object-brand-v4.webp",
-      intro: "Pequeños objetos corporativos con utilidad cotidiana, no piezas promocionales destinadas a un cajón.",
-      benefit: "Mantiene tu marca presente porque el objeto cumple una función real.",
-      manufacturing: "Selección de un objeto funcional, prototipo y fabricación por la técnica adecuada: impresión, grabado, corte o colaboración con proveedores.",
-      options: "Uso, forma, textura, paleta corporativa, packaging y distintas cantidades.",
+      intro: "Piezas de marca con utilidad diaria real, pensadas para que tus clientes y colaboradores las conserven y utilicen.",
+      benefit: "Genera una conexión tangible y duradera con tu marca, muy por encima del merchandising genérico descartable.",
+      manufacturing: "Selección del objeto según uso, modelado, prototipo funcional y producción mediante técnicas mixtas (mecanizado, corte, impresión y acabados nobles).",
+      options: "Uso específico, ergonomía, materiales combinados, gama cromática y packaging protector.",
       type: "brand", sector: "marca"
     },
     custom: {
-      category: "AV / 06 — BESPOKE OBJECTS", title: "Lo que aún no existe.",
+      category: "ARGZ / 06 — A MEDIDA",
+      title: "Proyectos especiales",
       image: "./images/object-custom-v4.webp",
-      intro: "Si tu negocio tiene un problema que ningún accesorio convencional resuelve, empezamos por ahí.",
-      benefit: "Una solución ajustada a tu flujo de trabajo en lugar de adaptar el negocio a un producto genérico.",
-      manufacturing: "Modelado CAD y prototipo según exigencias de carga, temperatura, limpieza y uso. La producción final se selecciona tras validar la pieza.",
-      options: "Función, medidas, encajes, material, forma, color y volumen de fabricación.",
+      intro: "Desarrollo de piezas singulares y soluciones no estandarizadas a partir de tu problema específico.",
+      benefit: "Una solución que se ajusta a tus necesidades exactas en lugar de forzar a tu negocio a adaptarse a productos estándar de catálogo.",
+      manufacturing: "Estudio técnico preliminar, modelado 3D CAD, análisis de tolerancias y validación mediante prototipo físico antes de coordinar la fabricación final.",
+      options: "Definición total: geometría, resistencia mecánica, acabados, uniones desmontables y tirada necesaria.",
       type: "custom", sector: "otro"
     }
   };
@@ -64,6 +70,7 @@
   if (!prefersLessMotion && window.Lenis) {
     try {
       smooth = new window.Lenis({ autoRaf: true, anchors: true, duration: 1.08, smoothWheel: true, wheelMultiplier: 0.9 });
+      window.lenisInstance = smooth;
     } catch (err) { console.warn("Smooth scroll unavailable; using native scrolling.", err); }
   }
 
